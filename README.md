@@ -25,6 +25,22 @@ In the tenth frame a player who rolls a spare or strike is allowed to roll the e
 balls to complete the frame.  However no more than three balls can be rolled in
 tenth frame.
 
+## The Requirements 
 
-##Links 
+Write a class named “Game” that has two methods roll(pins : int) is called each time the player rolls a ball.  The argument is the number of pins knocked down.
+   score() : int is called only at the very end of the game.  It returns the total score for that game.
+
+# Quick Design Session
+
+We will need a "Game" Class and from the scoring we can see that we will need to model another class 
+"Frame". 
+
+* A Game has 10 Frames
+* A Frame has 1 or 2 rolls
+* The Tenth Frame has 2 or 3 rolls and differs from the other Frames
+* The Score function needs to iterate through all the frames and calculate all their scores
+* The Score for a Strike or a Spare depends on the Frames Successor
+
+## Links 
 http://butunclebob.com/ArticleS.UncleBob.TheBowlingGameKata
+http://butunclebob.com/files/downloads/Bowling%20Game%20Kata.ppt
