@@ -42,6 +42,16 @@ public class BowlingGameTest {
         assertThat(g.score(), is(24));
     }
 
+    @Test
+    public void TestPerfectGame(){
+        rollGame(10, 12);
+        assertThat(g.score(), is(300));
+    }
+
+    private void rollStrike(){
+       g.roll(10);
+    }
+
     private void rollGame(int pinsPerTurn, int numberOfTurns){
         for(int i=0; i<numberOfTurns; i++){
             g.roll(pinsPerTurn);
