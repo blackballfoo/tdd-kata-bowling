@@ -27,16 +27,29 @@ public class BowlingGameTest {
 
     @Test
     public void testSpareThenThreeRollScore(){
-        g.roll(5);
-        g.roll(5);
+        rollSpare();
         g.roll(3);
         rollGame(0,17);
         assertThat(g.score(), is(16));
+    }
+
+    @Test
+    public void testStrikeThenRollThreeThenRollFourScore(){
+        g.roll(10);
+        g.roll(3);
+        g.roll(4);
+        rollGame(0,17);
+        assertThat(g.score(), is(24));
     }
 
     private void rollGame(int pinsPerTurn, int numberOfTurns){
         for(int i=0; i<numberOfTurns; i++){
             g.roll(pinsPerTurn);
         }
+    }
+
+    private void rollSpare(){
+        g.roll(5);
+        g.roll(5);
     }
 }
