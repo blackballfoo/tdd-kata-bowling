@@ -20,9 +20,18 @@ public class BowlingGameTest {
     }
 
     @Test
-    public void whenOnePinIsKnockedDownForTwentyRollsScoreShouldBeTwenty(){
+    public void testOneScoringGame(){
         rollGame(1, 20);
         assertThat(g.score(), is(20));
+    }
+
+    @Test
+    public void testSpareThenThreeRollScore(){
+        g.roll(5);
+        g.roll(5);
+        g.roll(3);
+        rollGame(0,17);
+        assertThat(g.score(), is(16));
     }
 
     private void rollGame(int pinsPerTurn, int numberOfTurns){
