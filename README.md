@@ -41,6 +41,12 @@ We will need a "Game" Class and from the scoring we can see that we will need to
 * The Score function needs to iterate through all the frames and calculate all their scores
 * The Score for a Strike or a Spare depends on the Frames Successor
 
+## Clues
+
+Start with the simplest test which is a gutter ball zero score game. Then work on another simple test to test when only 1 pin is hit on each roll.
+
+Next we can look at when you get a Spare and the scoring and then when you get a strike.
+
 ## Links 
 http://butunclebob.com/ArticleS.UncleBob.TheBowlingGameKata
 http://butunclebob.com/files/downloads/Bowling%20Game%20Kata.ppt
