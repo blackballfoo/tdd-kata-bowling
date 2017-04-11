@@ -6,7 +6,7 @@ Details from PPT:-
 ## Scoring
 
 Example Score:
-![alt text](http://slocums.homestead.com/files/scrsheet.gif  "Bowling Score")
+![alt text](https://github.com/blackballfoo/tdd-kata-bowling/blob/master/src/main/resources/readme-images/bowling-score.png  "Bowling Score")
 
 
 The game consists of 10 frames as shown above.  In each frame the player has
